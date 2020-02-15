@@ -1,6 +1,6 @@
 "use strict";
 
-/* 1 3 7 9 1 3 7 9 1 3    --> wagi
+/*  1 3 7 9 1 3 7 9 1 3    --> wagi
     X X X X X X X X X X Y  --> cyfry nr PESEL (Y- cyfra kontrolna)
 
 czyli:       
@@ -14,3 +14,12 @@ suma=(1*4+3*9+7*0+9*4+1*0+3*5+7*0+9*1+1*5+3*8)=
 
            10 - 0 =  10   ----> cyfra kontrolna ?
  korekta: dla wyniku 10   ----> cyfra kontrolna = 0 */
+
+let peselInt;
+let peselString=[];
+let peselTab=[];
+
+peselString=[...peselInt].toString();
+for (let index = 0; index < peselString.length; index++) {
+  peselTab[index] = peselString[index].ToInt();
+}
